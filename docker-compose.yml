@@ -1,0 +1,29 @@
+version: "3"
+services:
+  train:
+    image: train:v1
+    ports:
+      - "8000:80"
+    volume:
+      - "trainvol"
+
+  movie:
+    image: movie:v1
+    ports:
+      - "8001:80"
+    volume:
+      - "movievol"
+
+  loan:
+    image: loan:v1
+    ports:
+      - "8002:80"
+    volume:
+      - "loanvol"
+
+  dth:
+    image: dth:v1
+    ports:
+      - "8003:80"
+    volume:
+      - "dthvol"
